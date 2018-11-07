@@ -1,0 +1,6 @@
+
+django-admin startproject my建项目
+
+python manage.py startapp student建应用
+
+python manage.py runserver运行
