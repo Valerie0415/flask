@@ -1,0 +1,29 @@
+<html>
+<head>
+    {% block head %}
+	<title>{% block title %}{% endblock %} DATA SHOWS</title>
+	{% endblock %}
+</head>
+<body>
+	{% block body %}
+	<table>
+	<tr>
+	<td>Uuid</td><td>Token</td><td>Mac</td><td>Product_id</td>
+	</tr>
+	<tr>
+	<script>
+    {% for d in datas %}
+        <td>{{d['uuid']}}</td><td>{{d['token']}}</td><td>{{d['mac']}}</td><td>{{d['product_id']}}</td>
+    {% endfor %} 
+    </script>
+	</table>
+	{% endblock %}
+	<div>
+	<!-- <script>
+	window.myVar = {{datas}}
+	</script> -->
+</div>
+	 
+	
+</body>
+</html>
